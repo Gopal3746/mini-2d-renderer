@@ -1,0 +1,7 @@
+build/
+*.o
+*.a
+*.out
+compile_commands.json
+output.png
+.DS_Store
