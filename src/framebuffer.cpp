@@ -5,31 +5,40 @@
 
 namespace renderer {
 
-Framebuffer::Framebuffer(int width, int height)
-    : width_(width), height_(height), pixels_(static_cast<size_t>(width) * height * 4, 0) {}
+Framebuffer::Framebuffer(int width, int height) : width_(width), height_(height) {
+    if (width <= 0 || height <= 0) {
+        throw std::invalid_argument("Framebuffer dimensions must be positive");
+    }
+    pixels_.assign(static_cast<size_t>(width) * height * 4, 0);
+}
+
 
 void Framebuffer::clear(const Color& color) {
     for (int y = 0; y < height_; ++y) {
         for (int x = 0; x < width_; ++x) {
-            set_pixel_raw(x, y, color);
+            write_rgba8(index(x, y), color);
         }
     }
 }
 
+void Framebuffer::write_rgba8(size_t idx, const Color& color) {
+    pixels_[idx + 0] = color.r8();
+    pixels_[idx + 1] = color.g8();
+    pixels_[idx + 2] = color.b8();
+    pixels_[idx + 3] = color.a8();
+}
+
 void Framebuffer::set_pixel_raw(int x, int y, const Color& color) {
     if (!in_bounds(x, y)) return;
-    const size_t i = index(x, y);
-    pixels_[i + 0] = color.r8();
-    pixels_[i + 1] = color.g8();
-    pixels_[i + 2] = color.b8();
-    pixels_[i + 3] = color.a8();
+    write_rgba8(index(x, y), color);
 }
 
 void Framebuffer::set_pixel(int x, int y, const Color& color) {
     if (!in_bounds(x, y)) return;
+    const size_t i = index(x, y);
 
     if (color.a >= 1.0f) {
-        set_pixel_raw(x, y, color);
+        write_rgba8(i, color);
         return;
     }
     if (color.a <= 0.0f) {
@@ -47,7 +56,7 @@ void Framebuffer::set_pixel(int x, int y, const Color& color) {
     }
     out.a = out_a;
 
-    set_pixel_raw(x, y, out);
+    write_rgba8(i, out);
 }
 
 Color Framebuffer::get_pixel(int x, int y) const {

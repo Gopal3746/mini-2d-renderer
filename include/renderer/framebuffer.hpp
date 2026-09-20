@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstdint>
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -11,6 +12,7 @@ namespace renderer {
 // An RGBA8 framebuffer. Pixel (0, 0) is the top-left corner.
 class Framebuffer {
 public:
+    // Throws std::invalid_argument if width or height is not positive.
     Framebuffer(int width, int height);
 
     [[nodiscard]] int width() const { return width_; }
@@ -45,6 +47,11 @@ private:
     [[nodiscard]] size_t index(int x, int y) const {
         return (static_cast<size_t>(y) * width_ + x) * 4;
     }
+    // Writes at a pre-computed index with NO bounds check -- callers must
+    // have already validated (x, y) themselves. Exists so set_pixel can do
+    // its bounds check exactly once instead of once itself and again inside
+    // set_pixel_raw.
+    void write_rgba8(size_t idx, const Color& color);
 };
 
 }  // namespace renderer
