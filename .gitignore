@@ -5,3 +5,6 @@ build/
 compile_commands.json
 output.png
 .DS_Store
+
+build*/
+.cache/
