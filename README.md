@@ -1,6 +1,6 @@
 # mini-renderer
 
-[![CI](https://github.com/Gopal3746/mini-renderer/actions/workflows/ci.yml/badge.svg)](https://github.com/Gopal3746/mini-renderer/actions/workflows/ci.yml)
+[![CI](https://github.com/Gopal3746/mini-2d-renderer/actions/workflows/ci.yml/badge.svg)](https://github.com/Gopal3746/mini-2d-renderer/actions/workflows/ci.yml)
 
 I built a small 2D software renderer from scratch in C++20, with no external rasterization libraries. The goal was to understand what a graphics library does under the hood, by building each stage of the pipeline by hand:
 
