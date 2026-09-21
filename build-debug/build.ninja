@@ -180,9 +180,607 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target renderer_tests
+
+
+#############################################
+# Order-only phony target for renderer_tests
+
+build cmake_object_order_depends_target_renderer_tests: phony || cmake_object_order_depends_target_renderer_core
+
+build tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_main.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_vec2.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_color.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_matrix3x3.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_framebuffer.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_rasterizer.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_bezier.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target renderer_tests
+
+
+#############################################
+# Link the executable tests/renderer_tests
+
+build tests/renderer_tests: CXX_EXECUTABLE_LINKER__renderer_tests_Debug tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o | librenderer_core.a || librenderer_core.a
+  CONFIG = Debug
+  FLAGS = -g -arch arm64
+  LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address,undefined
+  LINK_LIBRARIES = librenderer_core.a
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_FILE = tests/renderer_tests
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+
+#############################################
+# Utility command for Experimental
+
+build tests/Experimental: phony tests/CMakeFiles/Experimental
+
+
+#############################################
+# Utility command for Nightly
+
+build tests/Nightly: phony tests/CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for Continuous
+
+build tests/Continuous: phony tests/CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build tests/NightlyMemoryCheck: phony tests/CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for NightlyStart
+
+build tests/NightlyStart: phony tests/CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build tests/NightlyUpdate: phony tests/CMakeFiles/NightlyUpdate
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build tests/NightlyConfigure: phony tests/CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build tests/NightlyBuild: phony tests/CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for NightlyTest
+
+build tests/NightlyTest: phony tests/CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build tests/NightlyCoverage: phony tests/CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build tests/NightlyMemCheck: phony tests/CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build tests/NightlySubmit: phony tests/CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build tests/ExperimentalStart: phony tests/CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build tests/ExperimentalUpdate: phony tests/CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build tests/ExperimentalConfigure: phony tests/CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build tests/ExperimentalBuild: phony tests/CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build tests/ExperimentalTest: phony tests/CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build tests/ExperimentalCoverage: phony tests/CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build tests/ExperimentalMemCheck: phony tests/CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build tests/ExperimentalSubmit: phony tests/CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build tests/ContinuousStart: phony tests/CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build tests/ContinuousUpdate: phony tests/CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build tests/ContinuousConfigure: phony tests/CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build tests/ContinuousBuild: phony tests/CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build tests/ContinuousTest: phony tests/CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build tests/ContinuousCoverage: phony tests/CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build tests/ContinuousMemCheck: phony tests/CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build tests/ContinuousSubmit: phony tests/CMakeFiles/ContinuousSubmit
+
+
+#############################################
+# Utility command for test
+
+build tests/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build tests/test: phony tests/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ccmake -S/Users/gopalkamineni/Downloads/mini-renderer -B/Users/gopalkamineni/Downloads/mini-renderer/build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build tests/edit_cache: phony tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/gopalkamineni/Downloads/mini-renderer -B/Users/gopalkamineni/Downloads/mini-renderer/build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for tests/CMakeFiles/Experimental
+
+build tests/CMakeFiles/Experimental | ${cmake_ninja_workdir}tests/CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/Nightly
+
+build tests/CMakeFiles/Nightly | ${cmake_ninja_workdir}tests/CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/Continuous
+
+build tests/CMakeFiles/Continuous | ${cmake_ninja_workdir}tests/CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyMemoryCheck
+
+build tests/CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=NightlyMemoryCheck -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyStart
+
+build tests/CMakeFiles/NightlyStart | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyUpdate
+
+build tests/CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyConfigure
+
+build tests/CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Configure -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyBuild
+
+build tests/CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Build -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyTest
+
+build tests/CMakeFiles/NightlyTest | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyCoverage
+
+build tests/CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Coverage -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlyMemCheck
+
+build tests/CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}tests/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/NightlySubmit
+
+build tests/CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}tests/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Nightly -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalStart
+
+build tests/CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalUpdate
+
+build tests/CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalConfigure
+
+build tests/CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Configure -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalBuild
+
+build tests/CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Build -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalTest
+
+build tests/CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalCoverage
+
+build tests/CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Coverage -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalMemCheck
+
+build tests/CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ExperimentalSubmit
+
+build tests/CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}tests/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Experimental -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousStart
+
+build tests/CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Start -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousUpdate
+
+build tests/CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Update -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousConfigure
+
+build tests/CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Configure -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousBuild
+
+build tests/CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Build -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousTest
+
+build tests/CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Test -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousCoverage
+
+build tests/CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Coverage -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousMemCheck
+
+build tests/CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+
+#############################################
+# Custom command for tests/CMakeFiles/ContinuousSubmit
+
+build tests/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}tests/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests && /opt/homebrew/bin/ctest -DMODEL=Continuous -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
+  pool = console
+
+# =============================================================================
 # Target aliases.
 
+build Continuous: phony tests/Continuous
+
+build ContinuousBuild: phony tests/ContinuousBuild
+
+build ContinuousConfigure: phony tests/ContinuousConfigure
+
+build ContinuousCoverage: phony tests/ContinuousCoverage
+
+build ContinuousMemCheck: phony tests/ContinuousMemCheck
+
+build ContinuousStart: phony tests/ContinuousStart
+
+build ContinuousSubmit: phony tests/ContinuousSubmit
+
+build ContinuousTest: phony tests/ContinuousTest
+
+build ContinuousUpdate: phony tests/ContinuousUpdate
+
+build Experimental: phony tests/Experimental
+
+build ExperimentalBuild: phony tests/ExperimentalBuild
+
+build ExperimentalConfigure: phony tests/ExperimentalConfigure
+
+build ExperimentalCoverage: phony tests/ExperimentalCoverage
+
+build ExperimentalMemCheck: phony tests/ExperimentalMemCheck
+
+build ExperimentalStart: phony tests/ExperimentalStart
+
+build ExperimentalSubmit: phony tests/ExperimentalSubmit
+
+build ExperimentalTest: phony tests/ExperimentalTest
+
+build ExperimentalUpdate: phony tests/ExperimentalUpdate
+
+build Nightly: phony tests/Nightly
+
+build NightlyBuild: phony tests/NightlyBuild
+
+build NightlyConfigure: phony tests/NightlyConfigure
+
+build NightlyCoverage: phony tests/NightlyCoverage
+
+build NightlyMemCheck: phony tests/NightlyMemCheck
+
+build NightlyMemoryCheck: phony tests/NightlyMemoryCheck
+
+build NightlyStart: phony tests/NightlyStart
+
+build NightlySubmit: phony tests/NightlySubmit
+
+build NightlyTest: phony tests/NightlyTest
+
+build NightlyUpdate: phony tests/NightlyUpdate
+
 build renderer_core: phony librenderer_core.a
+
+build renderer_tests: phony tests/renderer_tests
 
 # =============================================================================
 # Folder targets.
@@ -192,7 +790,14 @@ build renderer_core: phony librenderer_core.a
 #############################################
 # Folder: /Users/gopalkamineni/Downloads/mini-renderer/build-debug
 
-build all: phony librenderer_core.a mini_renderer
+build all: phony librenderer_core.a mini_renderer tests/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests
+
+build tests/all: phony tests/renderer_tests
 
 # =============================================================================
 # Built-in targets
@@ -201,14 +806,14 @@ build all: phony librenderer_core.a mini_renderer
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /Users/gopalkamineni/Downloads/mini-renderer/build-debug/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/CTestTestfile.cmake: RERUN_CMAKE | /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake
+build build.ninja /Users/gopalkamineni/Downloads/mini-renderer/build-debug/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/CTestTestfile.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/CTestTestfile.cmake: RERUN_CMAKE | /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/tests/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CTest.cmake /opt/homebrew/share/cmake/Modules/CTestTargets.cmake /opt/homebrew/share/cmake/Modules/CTestUseLaunchers.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/DartConfiguration.tcl.in /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake: phony
+build /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/tests/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CTest.cmake /opt/homebrew/share/cmake/Modules/CTestTargets.cmake /opt/homebrew/share/cmake/Modules/CTestUseLaunchers.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/DartConfiguration.tcl.in /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake: phony
 
 
 #############################################

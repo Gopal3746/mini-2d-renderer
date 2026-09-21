@@ -1,7 +1,15 @@
 # ninja log v7
-1	354	1789993059005323038	CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o	e42bae66e8d8b4c1
-2	370	1789993059005882702	CMakeFiles/mini_renderer.dir/src/main.cpp.o	2d38c64eed993e2d
-1	370	1789993059005495704	CMakeFiles/renderer_core.dir/src/bezier.cpp.o	d9e9fc4201abfed1
-1	459	1789993059004990706	CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o	6808f0186d090e22
-459	506	1789993059462722135	librenderer_core.a	aa2ff5c63be21511
-506	547	1789993059510454552	mini_renderer	19b20a10b452a0e7
+1	602	1790002112089640217	CMakeFiles/mini_renderer.dir/src/main.cpp.o	2d38c64eed993e2d
+1	614	1790002112089361012	CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o	e42bae66e8d8b4c1
+1	645	1790002112089508427	CMakeFiles/renderer_core.dir/src/bezier.cpp.o	d9e9fc4201abfed1
+1	781	1790002112089083139	CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o	6808f0186d090e22
+2	801	1790002112090397002	tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o	1c5dbc869910e2bd
+2	810	1790002112090517751	tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o	73710cd680e0d5d5
+2	811	1790002112090147296	tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o	8a7c18c58c7aa59c
+2	819	1790002112090019089	tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o	8f275ea520ebb8fa
+2	822	1790002112089894548	tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o	27ef544ac9f3c085
+2	836	1790002112090271753	tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o	c30982b38453c469
+781	846	1790002112869192857	librenderer_core.a	aa2ff5c63be21511
+846	889	1790002112934362926	mini_renderer	19b20a10b452a0e7
+2	1717	1790002112089765591	tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o	68827a1f77dd312d
+1717	1776	1790002113805504475	tests/renderer_tests	102be3223100f962
