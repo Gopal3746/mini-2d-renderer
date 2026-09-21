@@ -50,4 +50,45 @@ void draw_line(Framebuffer& fb, const Line& line, const Color& color) {
     }
 }
 
+void fill_circle(Framebuffer& fb, const Circle& circle, const Color& color,
+                  int supersample) {
+    const float r = circle.radius;
+    const int x0 = static_cast<int>(std::floor(circle.center.x - r));
+    const int x1 = static_cast<int>(std::ceil(circle.center.x + r));
+    const int y0 = static_cast<int>(std::floor(circle.center.y - r));
+    const int y1 = static_cast<int>(std::ceil(circle.center.y + r));
+
+    const float r_sq = r * r;
+    const int n = supersample;
+    const float step = 1.0f / static_cast<float>(n);
+    const float half_step = step * 0.5f;
+    const int total_samples = n * n;
+
+    for (int y = y0; y <= y1; ++y) {
+        for (int x = x0; x <= x1; ++x) {
+            int inside_count = 0;
+            for (int sy = 0; sy < n; ++sy) {
+                for (int sx = 0; sx < n; ++sx) {
+                    // Sample at subpixel offsets within the pixel, not at
+                    // its corner -- (x, y) is the pixel's top-left, so the
+                    // first sample sits half_step in from that corner.
+                    const float sample_x = static_cast<float>(x) + half_step + sx * step;
+                    const float sample_y = static_cast<float>(y) + half_step + sy * step;
+                    const float dx = sample_x - circle.center.x;
+                    const float dy = sample_y - circle.center.y;
+                    if (dx * dx + dy * dy <= r_sq) {
+                        ++inside_count;
+                    }
+                }
+            }
+            if (inside_count == 0) continue;
+
+            const float coverage = static_cast<float>(inside_count) / total_samples;
+            Color c = color;
+            c.a *= coverage;
+            fb.set_pixel(x, y, c);
+        }
+    }
+}
+
 }  // namespace renderer

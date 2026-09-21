@@ -1,5 +1,6 @@
-// Milestone 2 demo: exercises the new rasterizer (fill_rect, draw_line)
-// on top of the math + framebuffer pipeline from milestone 1.
+// Milestone 3 demo: adds fill_circle to exercise anti-aliased coverage,
+// on top of the rect/line rasterizer and math/framebuffer pipeline from
+// milestones 1-2.
 
 #include <cmath>
 #include <cstdio>
@@ -11,6 +12,7 @@
 #include "renderer/shapes.hpp"
 #include "renderer/vec2.hpp"
 
+using renderer::Circle;
 using renderer::Color;
 using renderer::Framebuffer;
 using renderer::Line;
@@ -70,6 +72,12 @@ int main() {
             }
         }
     }
+
+    // 4. fill_circle: anti-aliased, placed straddling the rect's hard
+    //    edge and the background so the soft boundary contrasts directly
+    //    against a boundary with none.
+    renderer::fill_circle(fb, Circle{Vec2{330.0f, 200.0f}, 42.0f},
+                           Color{0.95f, 0.35f, 0.15f, 0.85f});
 
     const char* out_path = "output.png";
     if (!fb.write_png(out_path)) {

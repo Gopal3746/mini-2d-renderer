@@ -18,4 +18,15 @@ void fill_rect(Framebuffer& fb, const Rect& rect, const Color& color);
 // coverage. Endpoints are rounded to the nearest integer pixel.
 void draw_line(Framebuffer& fb, const Line& line, const Color& color);
 
+// Fills a circle with anti-aliased edges. Each pixel near the boundary
+// is supersampled on a supersample x supersample subpixel grid; the
+// fraction of samples that fall inside the circle becomes that pixel's
+// coverage, which scales color.a before blending through
+// Framebuffer::set_pixel. Interior and fully-exterior pixels resolve
+// to full or zero coverage respectively without needing the full
+// sample grid to "look" anti-aliased -- only boundary pixels actually
+// end up partially covered.
+void fill_circle(Framebuffer& fb, const Circle& circle, const Color& color,
+                  int supersample = 4);
+
 }  // namespace renderer

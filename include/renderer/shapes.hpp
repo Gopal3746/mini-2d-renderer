@@ -31,4 +31,12 @@ struct Line {
     constexpr Line(Vec2 a, Vec2 b) : p0(a), p1(b) {}
 };
 
+struct Circle {
+    Vec2 center;
+    float radius = 0.0f;
+
+    constexpr Circle() = default;
+    constexpr Circle(Vec2 c, float r) : center(c), radius(r) {}
+};
+
 }  // namespace renderer
