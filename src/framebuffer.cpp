@@ -1,5 +1,8 @@
 #include "renderer/framebuffer.hpp"
 
+#include <algorithm>
+#include <cmath>
+
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
@@ -10,8 +13,11 @@ Framebuffer::Framebuffer(int width, int height) : width_(width), height_(height)
         throw std::invalid_argument("Framebuffer dimensions must be positive");
     }
     pixels_.assign(static_cast<size_t>(width) * height * 4, 0);
+    clip_x0_ = 0;
+    clip_y0_ = 0;
+    clip_x1_ = width_;
+    clip_y1_ = height_;
 }
-
 
 void Framebuffer::clear(const Color& color) {
     for (int y = 0; y < height_; ++y) {
@@ -19,6 +25,30 @@ void Framebuffer::clear(const Color& color) {
             write_rgba8(index(x, y), color);
         }
     }
+}
+
+void Framebuffer::set_clip_rect(const Rect& rect) {
+    const int x0 = static_cast<int>(std::ceil(rect.left()));
+    const int y0 = static_cast<int>(std::ceil(rect.top()));
+    const int x1 = static_cast<int>(std::ceil(rect.right()));
+    const int y1 = static_cast<int>(std::ceil(rect.bottom()));
+
+    clip_x0_ = std::max(x0, 0);
+    clip_y0_ = std::max(y0, 0);
+    clip_x1_ = std::min(x1, width_);
+    clip_y1_ = std::min(y1, height_);
+}
+
+void Framebuffer::clear_clip() {
+    clip_x0_ = 0;
+    clip_y0_ = 0;
+    clip_x1_ = width_;
+    clip_y1_ = height_;
+}
+
+Rect Framebuffer::clip_rect() const {
+    return Rect{static_cast<float>(clip_x0_), static_cast<float>(clip_y0_),
+                static_cast<float>(clip_x1_ - clip_x0_), static_cast<float>(clip_y1_ - clip_y0_)};
 }
 
 void Framebuffer::write_rgba8(size_t idx, const Color& color) {
@@ -29,12 +59,12 @@ void Framebuffer::write_rgba8(size_t idx, const Color& color) {
 }
 
 void Framebuffer::set_pixel_raw(int x, int y, const Color& color) {
-    if (!in_bounds(x, y)) return;
+    if (!in_clip(x, y)) return;
     write_rgba8(index(x, y), color);
 }
 
 void Framebuffer::set_pixel(int x, int y, const Color& color) {
-    if (!in_bounds(x, y)) return;
+    if (!in_clip(x, y)) return;
     const size_t i = index(x, y);
 
     if (color.a >= 1.0f) {

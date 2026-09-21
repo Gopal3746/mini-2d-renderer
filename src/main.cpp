@@ -1,5 +1,5 @@
-// Milestone 4 demo: adds Bezier curve flattening + stroking on top of
-// rects, lines, and the anti-aliased circle from milestones 1-3.
+// Milestone: clipping. Adds a scissor-rect-style clip on top of rects,
+// lines, the anti-aliased circle, and Bezier curves from earlier steps.
 
 #include <cmath>
 #include <cstdio>
@@ -70,8 +70,7 @@ int main() {
     renderer::fill_circle(fb, Circle{Vec2{330.0f, 200.0f}, 42.0f},
                            Color{0.95f, 0.35f, 0.15f, 0.85f});
 
-    // 5. draw_quadratic_bezier: a gentle upward arc across the open
-    //    strip above the rect, entirely on-canvas.
+    // 5. draw_quadratic_bezier: arc across the top.
     const QuadraticBezier arc{Vec2{10.0f, 60.0f}, Vec2{200.0f, 10.0f}, Vec2{390.0f, 60.0f}};
     renderer::draw_quadratic_bezier(fb, arc, Color{0.0f, 0.3f, 0.0f, 1.0f});
 
@@ -80,6 +79,32 @@ int main() {
     const CubicBezier s_curve{Vec2{20.0f, 280.0f}, Vec2{140.0f, 280.0f}, Vec2{20.0f, 230.0f},
                                Vec2{140.0f, 230.0f}};
     renderer::draw_cubic_bezier(fb, s_curve, Color{0.5f, 0.0f, 0.5f, 1.0f});
+
+    // 7. Clipping: stroke the clip region's boundary first (unclipped,
+    //    so the outline itself is fully visible as a reference), then
+    //    set that same rect as the clip and fill an oversized circle
+    //    that geometrically extends well past it on every side. Only
+    //    the portion inside the rect should actually appear -- notably
+    //    including the top edge, which would otherwise paint over the
+    //    translucent rect's lower-left corner if clipping weren't
+    //    working.
+    const Rect clip_box{150.0f, 225.0f, 120.0f, 65.0f};  // x:[150,270), y:[225,290)
+    const Color clip_outline_color{0.0f, 0.0f, 0.0f, 1.0f};
+    {
+        const Vec2 tl{clip_box.left(), clip_box.top()};
+        const Vec2 tr{clip_box.right(), clip_box.top()};
+        const Vec2 br{clip_box.right(), clip_box.bottom()};
+        const Vec2 bl{clip_box.left(), clip_box.bottom()};
+        renderer::draw_line(fb, Line{tl, tr}, clip_outline_color);
+        renderer::draw_line(fb, Line{tr, br}, clip_outline_color);
+        renderer::draw_line(fb, Line{br, bl}, clip_outline_color);
+        renderer::draw_line(fb, Line{bl, tl}, clip_outline_color);
+    }
+
+    fb.set_clip_rect(clip_box);
+    renderer::fill_circle(fb, Circle{Vec2{210.0f, 257.0f}, 55.0f},
+                           Color{0.1f, 0.6f, 0.9f, 0.9f});
+    fb.clear_clip();  // good practice, even though nothing draws after this
 
     const char* out_path = "output.png";
     if (!fb.write_png(out_path)) {

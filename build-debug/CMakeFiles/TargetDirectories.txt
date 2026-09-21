@@ -1,0 +1,5 @@
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/CMakeFiles/renderer_core.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/CMakeFiles/mini_renderer.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/CMakeFiles/test.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/CMakeFiles/edit_cache.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/CMakeFiles/rebuild_cache.dir

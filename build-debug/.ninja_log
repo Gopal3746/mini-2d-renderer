@@ -1,0 +1,7 @@
+# ninja log v7
+1	354	1789993059005323038	CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o	e42bae66e8d8b4c1
+2	370	1789993059005882702	CMakeFiles/mini_renderer.dir/src/main.cpp.o	2d38c64eed993e2d
+1	370	1789993059005495704	CMakeFiles/renderer_core.dir/src/bezier.cpp.o	d9e9fc4201abfed1
+1	459	1789993059004990706	CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o	6808f0186d090e22
+459	506	1789993059462722135	librenderer_core.a	aa2ff5c63be21511
+506	547	1789993059510454552	mini_renderer	19b20a10b452a0e7
