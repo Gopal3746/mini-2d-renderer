@@ -35,3 +35,7 @@
 /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/CMakeFiles/test.dir
 /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/CMakeFiles/edit_cache.dir
 /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/CMakeFiles/rebuild_cache.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/CMakeFiles/blend_benchmark.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/CMakeFiles/test.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/CMakeFiles/edit_cache.dir
+/Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/CMakeFiles/rebuild_cache.dir

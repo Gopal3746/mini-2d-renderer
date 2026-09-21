@@ -6,6 +6,7 @@ add_executable(renderer_tests
   test_framebuffer.cpp
   test_rasterizer.cpp
   test_bezier.cpp
+  test_blend.cpp
 )
 
 # renderer_core's PUBLIC include dirs (include/, external/stb) propagate

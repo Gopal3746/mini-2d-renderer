@@ -2,7 +2,8 @@
 	"InstallScripts" : 
 	[
 		"/Users/gopalkamineni/Downloads/mini-renderer/build-debug/cmake_install.cmake",
-		"/Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/cmake_install.cmake"
+		"/Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/cmake_install.cmake",
+		"/Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -51,6 +51,7 @@ build cmake_object_order_depends_target_renderer_core: phony || .
 
 build CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o: CXX_COMPILER__renderer_core_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/src/framebuffer.cpp || cmake_object_order_depends_target_renderer_core
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -62,6 +63,7 @@ build CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o: CXX_COMPILER__renderer
 
 build CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o: CXX_COMPILER__renderer_core_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/src/rasterizer.cpp || cmake_object_order_depends_target_renderer_core
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -73,7 +75,32 @@ build CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o: CXX_COMPILER__renderer_
 
 build CMakeFiles/renderer_core.dir/src/bezier.cpp.o: CXX_COMPILER__renderer_core_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/src/bezier.cpp || cmake_object_order_depends_target_renderer_core
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = CMakeFiles/renderer_core.dir/src/bezier.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = CMakeFiles/renderer_core.dir
+  OBJECT_FILE_DIR = CMakeFiles/renderer_core.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/renderer_core.dir/renderer_core.pdb
+  TARGET_PDB = librenderer_core.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/renderer_core.dir
+
+build CMakeFiles/renderer_core.dir/src/blend.cpp.o: CXX_COMPILER__renderer_core_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/src/blend.cpp || cmake_object_order_depends_target_renderer_core
+  CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
+  DEP_FILE = CMakeFiles/renderer_core.dir/src/blend.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = CMakeFiles/renderer_core.dir
+  OBJECT_FILE_DIR = CMakeFiles/renderer_core.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/renderer_core.dir/renderer_core.pdb
+  TARGET_PDB = librenderer_core.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/renderer_core.dir
+
+build CMakeFiles/renderer_core.dir/src/blend_neon.cpp.o: CXX_COMPILER__renderer_core_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/src/blend_neon.cpp || cmake_object_order_depends_target_renderer_core
+  CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
+  DEP_FILE = CMakeFiles/renderer_core.dir/src/blend_neon.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
   OBJECT_DIR = CMakeFiles/renderer_core.dir
@@ -90,7 +117,7 @@ build CMakeFiles/renderer_core.dir/src/bezier.cpp.o: CXX_COMPILER__renderer_core
 #############################################
 # Link the static library librenderer_core.a
 
-build librenderer_core.a: CXX_STATIC_LIBRARY_LINKER__renderer_core_Debug CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o CMakeFiles/renderer_core.dir/src/bezier.cpp.o
+build librenderer_core.a: CXX_STATIC_LIBRARY_LINKER__renderer_core_Debug CMakeFiles/renderer_core.dir/src/framebuffer.cpp.o CMakeFiles/renderer_core.dir/src/rasterizer.cpp.o CMakeFiles/renderer_core.dir/src/bezier.cpp.o CMakeFiles/renderer_core.dir/src/blend.cpp.o CMakeFiles/renderer_core.dir/src/blend_neon.cpp.o
   ARCH_FLAGS = -arch arm64
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -g
@@ -113,6 +140,7 @@ build cmake_object_order_depends_target_mini_renderer: phony || cmake_object_ord
 
 build CMakeFiles/mini_renderer.dir/src/main.cpp.o: CXX_COMPILER__mini_renderer_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/src/main.cpp || cmake_object_order_depends_target_mini_renderer
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = CMakeFiles/mini_renderer.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -195,6 +223,7 @@ build cmake_object_order_depends_target_renderer_tests: phony || cmake_object_or
 
 build tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_main.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -206,6 +235,7 @@ build tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o: CXX_COMPILER__rendere
 
 build tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_vec2.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -217,6 +247,7 @@ build tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o: CXX_COMPILER__rendere
 
 build tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_color.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -228,6 +259,7 @@ build tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o: CXX_COMPILER__render
 
 build tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_matrix3x3.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -239,6 +271,7 @@ build tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o: CXX_COMPILER__re
 
 build tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_framebuffer.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -250,6 +283,7 @@ build tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o: CXX_COMPILER__
 
 build tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_rasterizer.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
@@ -261,7 +295,20 @@ build tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o: CXX_COMPILER__r
 
 build tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_bezier.cpp || cmake_object_order_depends_target_renderer_tests
   CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
   DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
+  OBJECT_FILE_DIR = tests/CMakeFiles/renderer_tests.dir
+  TARGET_COMPILE_PDB = tests/CMakeFiles/renderer_tests.dir/
+  TARGET_PDB = tests/renderer_tests.pdb
+  TARGET_SUPPORT_DIR = tests/CMakeFiles/renderer_tests.dir
+
+build tests/CMakeFiles/renderer_tests.dir/test_blend.cpp.o: CXX_COMPILER__renderer_tests_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/tests/test_blend.cpp || cmake_object_order_depends_target_renderer_tests
+  CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
+  DEP_FILE = tests/CMakeFiles/renderer_tests.dir/test_blend.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
   INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/tests/../external/doctest -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
   OBJECT_DIR = tests/CMakeFiles/renderer_tests.dir
@@ -278,7 +325,7 @@ build tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o: CXX_COMPILER__rende
 #############################################
 # Link the executable tests/renderer_tests
 
-build tests/renderer_tests: CXX_EXECUTABLE_LINKER__renderer_tests_Debug tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o | librenderer_core.a || librenderer_core.a
+build tests/renderer_tests: CXX_EXECUTABLE_LINKER__renderer_tests_Debug tests/CMakeFiles/renderer_tests.dir/test_main.cpp.o tests/CMakeFiles/renderer_tests.dir/test_vec2.cpp.o tests/CMakeFiles/renderer_tests.dir/test_color.cpp.o tests/CMakeFiles/renderer_tests.dir/test_matrix3x3.cpp.o tests/CMakeFiles/renderer_tests.dir/test_framebuffer.cpp.o tests/CMakeFiles/renderer_tests.dir/test_rasterizer.cpp.o tests/CMakeFiles/renderer_tests.dir/test_bezier.cpp.o tests/CMakeFiles/renderer_tests.dir/test_blend.cpp.o | librenderer_core.a || librenderer_core.a
   CONFIG = Debug
   FLAGS = -g -arch arm64
   LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address,undefined
@@ -720,6 +767,89 @@ build tests/CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}tests/CMakeFiles
   pool = console
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target blend_benchmark
+
+
+#############################################
+# Order-only phony target for blend_benchmark
+
+build cmake_object_order_depends_target_blend_benchmark: phony || cmake_object_order_depends_target_renderer_core
+
+build benchmarks/CMakeFiles/blend_benchmark.dir/benchmark_blend.cpp.o: CXX_COMPILER__blend_benchmark_unscanned_Debug /Users/gopalkamineni/Downloads/mini-renderer/benchmarks/benchmark_blend.cpp || cmake_object_order_depends_target_blend_benchmark
+  CONFIG = Debug
+  DEFINES = -DRENDERER_HAS_NEON=1
+  DEP_FILE = benchmarks/CMakeFiles/blend_benchmark.dir/benchmark_blend.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer
+  INCLUDES = -I/Users/gopalkamineni/Downloads/mini-renderer/include -isystem /Users/gopalkamineni/Downloads/mini-renderer/external/stb
+  OBJECT_DIR = benchmarks/CMakeFiles/blend_benchmark.dir
+  OBJECT_FILE_DIR = benchmarks/CMakeFiles/blend_benchmark.dir
+  TARGET_COMPILE_PDB = benchmarks/CMakeFiles/blend_benchmark.dir/
+  TARGET_PDB = benchmarks/blend_benchmark.pdb
+  TARGET_SUPPORT_DIR = benchmarks/CMakeFiles/blend_benchmark.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target blend_benchmark
+
+
+#############################################
+# Link the executable benchmarks/blend_benchmark
+
+build benchmarks/blend_benchmark: CXX_EXECUTABLE_LINKER__blend_benchmark_Debug benchmarks/CMakeFiles/blend_benchmark.dir/benchmark_blend.cpp.o | librenderer_core.a || librenderer_core.a
+  CONFIG = Debug
+  FLAGS = -g -arch arm64
+  LINK_FLAGS = -Wl,-search_paths_first -Wl,-headerpad_max_install_names -fsanitize=address,undefined
+  LINK_LIBRARIES = librenderer_core.a
+  OBJECT_DIR = benchmarks/CMakeFiles/blend_benchmark.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = benchmarks/CMakeFiles/blend_benchmark.dir/
+  TARGET_FILE = benchmarks/blend_benchmark
+  TARGET_PDB = benchmarks/blend_benchmark.pdb
+  TARGET_SUPPORT_DIR = benchmarks/CMakeFiles/blend_benchmark.dir
+
+
+#############################################
+# Utility command for test
+
+build benchmarks/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks && /opt/homebrew/bin/ctest
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build benchmarks/test: phony benchmarks/CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build benchmarks/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks && /opt/homebrew/bin/ccmake -S/Users/gopalkamineni/Downloads/mini-renderer -B/Users/gopalkamineni/Downloads/mini-renderer/build-debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build benchmarks/edit_cache: phony benchmarks/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build benchmarks/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks && /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/gopalkamineni/Downloads/mini-renderer -B/Users/gopalkamineni/Downloads/mini-renderer/build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build benchmarks/rebuild_cache: phony benchmarks/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Continuous: phony tests/Continuous
@@ -778,6 +908,8 @@ build NightlyTest: phony tests/NightlyTest
 
 build NightlyUpdate: phony tests/NightlyUpdate
 
+build blend_benchmark: phony benchmarks/blend_benchmark
+
 build renderer_core: phony librenderer_core.a
 
 build renderer_tests: phony tests/renderer_tests
@@ -790,7 +922,14 @@ build renderer_tests: phony tests/renderer_tests
 #############################################
 # Folder: /Users/gopalkamineni/Downloads/mini-renderer/build-debug
 
-build all: phony librenderer_core.a mini_renderer tests/all
+build all: phony librenderer_core.a mini_renderer tests/all benchmarks/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks
+
+build benchmarks/all: phony benchmarks/blend_benchmark
 
 # =============================================================================
 
@@ -806,14 +945,14 @@ build tests/all: phony tests/renderer_tests
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /Users/gopalkamineni/Downloads/mini-renderer/build-debug/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/CTestTestfile.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/CTestTestfile.cmake: RERUN_CMAKE | /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/tests/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CTest.cmake /opt/homebrew/share/cmake/Modules/CTestTargets.cmake /opt/homebrew/share/cmake/Modules/CTestUseLaunchers.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/DartConfiguration.tcl.in /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake
+build build.ninja /Users/gopalkamineni/Downloads/mini-renderer/build-debug/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/cmake_install.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/CTestTestfile.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/tests/CTestTestfile.cmake /Users/gopalkamineni/Downloads/mini-renderer/build-debug/benchmarks/CTestTestfile.cmake: RERUN_CMAKE | /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/benchmarks/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/tests/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CTest.cmake /opt/homebrew/share/cmake/Modules/CTestTargets.cmake /opt/homebrew/share/cmake/Modules/CTestUseLaunchers.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/DartConfiguration.tcl.in /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/tests/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CTest.cmake /opt/homebrew/share/cmake/Modules/CTestTargets.cmake /opt/homebrew/share/cmake/Modules/CTestUseLaunchers.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/DartConfiguration.tcl.in /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake: phony
+build /Users/gopalkamineni/Downloads/mini-renderer/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/benchmarks/CMakeLists.txt /Users/gopalkamineni/Downloads/mini-renderer/tests/CMakeLists.txt /opt/homebrew/share/cmake/Modules/CMakeCXXCompiler.cmake.in /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake /opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake /opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /opt/homebrew/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /opt/homebrew/share/cmake/Modules/CMakeSystem.cmake.in /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake /opt/homebrew/share/cmake/Modules/CMakeTestCompilerCommon.cmake /opt/homebrew/share/cmake/Modules/CTest.cmake /opt/homebrew/share/cmake/Modules/CTestTargets.cmake /opt/homebrew/share/cmake/Modules/CTestUseLaunchers.cmake /opt/homebrew/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/homebrew/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/PellesC-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/homebrew/share/cmake/Modules/DartConfiguration.tcl.in /opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake /opt/homebrew/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake /opt/homebrew/share/cmake/Modules/Internal/FeatureTesting.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake /opt/homebrew/share/cmake/Templates/CTestScript.cmake.in CMakeCache.txt CMakeFiles/4.4.3/CMakeCXXCompiler.cmake CMakeFiles/4.4.3/CMakeSystem.cmake: phony
 
 
 #############################################

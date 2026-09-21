@@ -1,0 +1,2 @@
+add_executable(blend_benchmark benchmark_blend.cpp)
+target_link_libraries(blend_benchmark PRIVATE renderer_core)

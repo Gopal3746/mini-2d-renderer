@@ -38,6 +38,14 @@ jobs:
       - name: Run tests
         run: cd build && ctest --output-on-failure
 
+      - name: Run blend benchmark
+        # Exit code matters here more than the printed timing: the
+        # benchmark itself memcmp's scalar vs NEON output and returns 1
+        # on any mismatch. On macos-latest (real Apple Silicon) this
+        # actually exercises the NEON path; on ubuntu-latest it just
+        # confirms the scalar-only build still runs cleanly.
+        run: ./build/benchmarks/blend_benchmark
+
       - name: Upload demo PNG
         uses: actions/upload-artifact@v4
         with:
