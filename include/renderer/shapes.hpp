@@ -39,4 +39,24 @@ struct Circle {
     constexpr Circle(Vec2 c, float r) : center(c), radius(r) {}
 };
 
+struct QuadraticBezier {
+    Vec2 p0;
+    Vec2 control;
+    Vec2 p1;
+
+    constexpr QuadraticBezier() = default;
+    constexpr QuadraticBezier(Vec2 p0_, Vec2 c, Vec2 p1_) : p0(p0_), control(c), p1(p1_) {}
+};
+
+struct CubicBezier {
+    Vec2 p0;
+    Vec2 c0;
+    Vec2 c1;
+    Vec2 p1;
+
+    constexpr CubicBezier() = default;
+    constexpr CubicBezier(Vec2 p0_, Vec2 c0_, Vec2 c1_, Vec2 p1_)
+        : p0(p0_), c0(c0_), c1(c1_), p1(p1_) {}
+};
+
 }  // namespace renderer

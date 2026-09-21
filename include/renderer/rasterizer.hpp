@@ -29,4 +29,13 @@ void draw_line(Framebuffer& fb, const Line& line, const Color& color);
 void fill_circle(Framebuffer& fb, const Circle& circle, const Color& color,
                   int supersample = 4);
 
+// Strokes a curve by flattening it (see bezier.hpp) into `segments`
+// straight-line pieces and drawing each with draw_line. Inherits
+// draw_line's lack of anti-aliasing -- these are hard-edged polylines,
+// same as a straight line is.
+void draw_quadratic_bezier(Framebuffer& fb, const QuadraticBezier& curve, const Color& color,
+                            int segments = 24);
+void draw_cubic_bezier(Framebuffer& fb, const CubicBezier& curve, const Color& color,
+                        int segments = 32);
+
 }  // namespace renderer

@@ -3,14 +3,11 @@
 #include <cmath>
 #include <cstdlib>
 
+#include "renderer/bezier.hpp"
+
 namespace renderer {
 
 void fill_rect(Framebuffer& fb, const Rect& rect, const Color& color) {
-    // Round each edge outward to the nearest pixel boundary and iterate a
-    // half-open [x0, x1) x [y0, y1) range, matching how most 2D APIs treat
-    // rect edges. This is a hard-edged fill -- a pixel is either fully
-    // painted or not touched at all. Partial-coverage edges are the
-    // anti-aliasing milestone's job, not this one's.
     const int x0 = static_cast<int>(std::ceil(rect.left()));
     const int y0 = static_cast<int>(std::ceil(rect.top()));
     const int x1 = static_cast<int>(std::ceil(rect.right()));
@@ -69,9 +66,6 @@ void fill_circle(Framebuffer& fb, const Circle& circle, const Color& color,
             int inside_count = 0;
             for (int sy = 0; sy < n; ++sy) {
                 for (int sx = 0; sx < n; ++sx) {
-                    // Sample at subpixel offsets within the pixel, not at
-                    // its corner -- (x, y) is the pixel's top-left, so the
-                    // first sample sits half_step in from that corner.
                     const float sample_x = static_cast<float>(x) + half_step + sx * step;
                     const float sample_y = static_cast<float>(y) + half_step + sy * step;
                     const float dx = sample_x - circle.center.x;
@@ -88,6 +82,22 @@ void fill_circle(Framebuffer& fb, const Circle& circle, const Color& color,
             c.a *= coverage;
             fb.set_pixel(x, y, c);
         }
+    }
+}
+
+void draw_quadratic_bezier(Framebuffer& fb, const QuadraticBezier& curve, const Color& color,
+                            int segments) {
+    const std::vector<Vec2> points = flatten(curve, segments);
+    for (size_t i = 0; i + 1 < points.size(); ++i) {
+        draw_line(fb, Line{points[i], points[i + 1]}, color);
+    }
+}
+
+void draw_cubic_bezier(Framebuffer& fb, const CubicBezier& curve, const Color& color,
+                        int segments) {
+    const std::vector<Vec2> points = flatten(curve, segments);
+    for (size_t i = 0; i + 1 < points.size(); ++i) {
+        draw_line(fb, Line{points[i], points[i + 1]}, color);
     }
 }
 
